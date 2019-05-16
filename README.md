@@ -1,3 +1,3 @@
 # quizly
-Quiz Web created with js &amp; firebase.\n
+Quiz Web created with js &amp; firebase.
 Home Page => index.html
