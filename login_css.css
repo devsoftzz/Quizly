@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(66, 176, 244);
+}
+.main{
+	background-color: rgba(255, 255, 255,.6);
+    position: absolute;
+    padding: 50px 40px 40px 40px;
+	top: 50%;
+	left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+}
+h1{
+    font-size: 62px;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+#name{
+    border: none;
+    height: 40px;
+    width: 450px;
+    font-size: 36px;
+    font-weight: 900;
+    padding-left: 10px;
+    color: rgba(0,0,0,.6);
+}
+#read{
+    font-size: 35px;
+}
+#but{
+    border: none;
+    border-radius: 38px;
+    padding: 0px 30px;
+    background-color: rgb(46, 184, 46);
+    color: white;
+    font-size: 38px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button{
+    margin-bottom: 10px; 
+    width: 250px;
+    background-color: rgb(46, 184, 46);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 36px;
+    box-shadow: 5px 5px 10px rgba(166, 166, 166,.75);
+    cursor: pointer;
+    padding: 0px 20px;
+}
+h2{
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    margin: 0px;
+    font-size: 50px;
+}

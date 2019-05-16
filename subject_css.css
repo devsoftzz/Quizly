@@ -1,0 +1,61 @@
+body{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(66, 176, 244);
+}
+.main{
+	background-color: rgba(255, 255, 255,.5);
+	height: 700px;
+	width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.play{
+	border: 0px;
+	background-color: rgba(0,0,0,.25);
+	font-weight: bold;
+	color: rgb(255,255,255);
+	font-size: 44px;
+	margin: 2.5% 2.5%;
+	cursor: pointer;
+}
+#a{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 45%;
+	height: 45%;
+	align-self: left;
+}
+#b{
+	position: absolute;
+	width: 45%;
+	top: 0px;
+	left: 50%;
+	height: 45%;
+	align-self: left;
+}
+#c{
+	position: absolute;
+	width: 45%;
+	top: 50%;
+	left: 0px;
+	height: 45%;
+	align-self: left;
+}
+#d{
+	position: absolute;
+	width: 45%;
+	top: 50%;
+	left: 50%;
+	height: 45%;
+	align-self: left;
+}

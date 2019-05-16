@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LeadBoard | Chemistry</title>
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+	<link rel="stylesheet" type="text/css" href="leadboard_css.css">
+</head>
+<body>
+	<div class="main">
+		<h1>Chemistry</h1>
+		<table id="myTable">
+			<tr>
+				<td ><h3>Name</h3></td>
+				<td><h3>Score</h3></td>
+			</tr>
+		</table>
+		<br>
+		<a href="index.html"><button class="button1">Home</button></a>
+	</div>
+
+<script>
+	var config = {
+	apiKey: "AIzaSyDsaS-jR8Cuk9k9M2jBlNce7hFUEBloJgs",
+    authDomain: "quizly-7883f.firebaseapp.com",
+    databaseURL: "https://quizly-7883f.firebaseio.com",
+    projectId: "quizly-7883f",
+    storageBucket: "",
+    messagingSenderId: "237234232839"
+  };
+firebase.initializeApp(config);
+
+var rootRef = firebase.database().ref('chemistry');
+	
+rootRef.on('value', gotData);
+
+function gotData(data){
+		//console.log(data.val());
+	var scores = data.val();
+	var keys = Object.keys(scores);
+		//console.log(keys);
+	for (var i = 0;i<keys.length;i++){
+
+		var k = keys[i];
+		var name = scores[k].name;
+		var score = scores[k].score;
+			//console.log(name,score);
+		var table = document.getElementById("myTable");
+  		var row = table.insertRow(1);
+  		var cell1 = row.insertCell(0);
+  		var cell2 = row.insertCell(1);
+  		cell1.innerHTML = name;
+  		cell2.innerHTML = score;
+		}
+	}
+</script>
+</body>
+</html>
