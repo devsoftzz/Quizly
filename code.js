@@ -174,3 +174,43 @@ function physub(){
 function chesub(){
 	localStorage.setItem('subject', "chemistry");
 }
+function loadQuestiony(){
+	var q = data[dataIndex];
+	document.getElementById('question').innerHTML = 'Q.' + (dataIndex + 1) + ')  ' + q.question;
+	document.getElementById('opt1').innerHTML = ' '+q.a;
+	document.getElementById('opt2').innerHTML = ' '+q.b;
+	document.getElementById('opt3').innerHTML = ' '+q.c;
+	document.getElementById('opt4').innerHTML = ' '+q.d;
+	document.getElementById('center').innerHTML = (dataIndex+1)+'/'+data.length;
+}
+function findAnswery(){
+
+	if(document.getElementById('op1').checked == true)
+	{
+		answerChecked[dataIndex]="a";
+	}
+	else if(document.getElementById('op2').checked == true)
+	{
+		answerChecked[dataIndex]="b";
+	}
+	else if(document.getElementById('op3').checked == true)
+	{
+		answerChecked[dataIndex]="c";
+	}
+	else if(document.getElementById('op4').checked == true)
+	{
+		answerChecked[dataIndex]="d";
+	}
+}
+function checkAnswery(){
+	var x = data[dataIndex];
+	if(answerChecked[dataIndex] == x.ans){
+		currectAns[dataIndex] = "1";
+	}
+	if (answerChecked[dataIndex] != x.ans) {
+		currectAns[dataIndex] = "-1";
+	}
+	if (answerChecked[dataIndex] == "0") {
+		currectAns[dataIndex] = "0";
+	}
+}
