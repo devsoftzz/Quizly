@@ -6,21 +6,21 @@ var data = [{
 	"d":"C.V. Raman",
 	"ans":"c"
 },{
-	"question":"Which is not a type of elements ?",
+	"question":"Which of the following is not a type of elements ?",
 	"a":"Metals",
 	"b":"Non Metals",
 	"c":"Metalloids",
 	"d":"Gases",
 	"ans":"d"
 },{
-	"question":"Which acid is present in lemon ?",
+	"question":"Which of the following acid is present in lemon ?",
 	"a":"Marlic Acid",
 	"b":"Citric Acid",
 	"c":"Lactic Acid",
 	"d":"Tartaric Acid",
 	"ans":"b"
 },{
-	"question":"Rare gases are",
+	"question":"Rare gases are _______",
 	"a":"mono atomic",
 	"b":"di atomic",
 	"c":"tri atomic",
@@ -34,7 +34,7 @@ var data = [{
 	"d":"phosphavinyl chloride",
 	"ans":"a"
 },{
-	"question":"What among following is used to produce artificial rain ?",
+	"question":"Which of the following is used to produce artificial rain ?",
 	"a":"copper oxide",
 	"b":"carbon monoxide",
 	"c":"silver iodide",
@@ -48,7 +48,7 @@ var data = [{
 	"d":"phosphoric acid",
 	"ans":"b"
 },{
-	"question":"Which metal is heaviest ?",
+	"question":"Name of metal the heaviest is _______",
 	"a":"Osmium",
 	"b":"Mercury",
 	"c":"Iron",
